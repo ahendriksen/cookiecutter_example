@@ -12,7 +12,7 @@ Python CI CWI boilerplate package.
 The author of this package is in the process of setting up this
 package for optimal usability. The following has already been completed:
 
-- [X] Documentation
+- [ ] Documentation
     - Documentation has been generated using `make docs`, committed,
         and pushed to GitHub.
 	- GitHub pages have been setup in the project settings
@@ -47,31 +47,6 @@ package for optimal usability. The following has already been completed:
     - Conda packages have been built successfully with `make conda_package`.
 	- These conda packages have been uploaded to [Anaconda](https://anaconda.org).
 	- The installation instructions (below) have been updated.
-
-## Index of common actions
-### Documentation
-- Add initial documentation
-- Update documentation
-- Add documentation to your module
-### README
-- Update installation instructions
-### Modules
-- Make submodules easier to reach
-### Testing
-- Add a test to your program
-### Examples
-- Make a simple example
-### Style
-- Automatically improve code layout
-### (Conda) Packaging and requirements
-- Create a Conda package
-- Add Astra dependency
-- Add PyTorch dependency
-- Add a 'normal' dependency
-### Releasing and Changelog
-- Create an initial release
-- Update unreleased section in CHANGELOG.md
-- Create new release
 
 ## Getting Started
 
