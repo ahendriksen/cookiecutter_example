@@ -6,12 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- <insert-features-not-in-a-release-yet>
 ### Fixed
-- <insert-bugs-fixed-not-in-a-release-yet>
 
-## 0.1.0 - YYYY-MM-DD
-### Added
+## 0.1.0 - 2018-12-13
 - Initial release.
 
-[Unreleased]: https://www.github.com/ahendriksen/cookiecutter_example/compare/v0.1.0...develop
+[Unreleased]: https://www.github.com/ahendriksen/cookiecutter_example/compare/v0.1.0...HEAD
