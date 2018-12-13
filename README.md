@@ -17,11 +17,11 @@ package for optimal usability. The following has already been completed:
         and pushed to GitHub.
 	- GitHub pages have been setup in the project settings
 	  with the "source" set to "master branch /docs folder".
-- [ ] An initial release
+- [X] An initial release
 	- In `CHANGELOG.md`, a release date has been added to v0.1.0 (change the YYYY-MM-DD).
 	- The release has been marked a release on GitHub.
 	- For more info, see the [Software Release Guide](https://cicwi.github.io/software-guidelines/software-release-guide).
-- [ ] A conda package
+- [X] A conda package
 	- Required packages have been added to `setup.py`, for instance,
 	  ```
 	  requirements = [ ]
@@ -84,7 +84,7 @@ Python 3.
 
 Simply install with:
 ```
-conda install -c cicwi cookiecutter_example
+conda install -c aahendriksen cookiecutter_example
 ```
 
 ### Installing from source
