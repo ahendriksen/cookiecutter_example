@@ -89,4 +89,4 @@ install_dev:
 
 conda_package:
 	conda install conda-build -y
-	conda build conda/
+	conda build -c astra-toolbox/label/dev conda/

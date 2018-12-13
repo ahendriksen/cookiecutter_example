@@ -84,7 +84,11 @@ Python 3.
 
 Simply install with:
 ```
-conda install -c aahendriksen cookiecutter_example
+conda install -c aahendriksen -c astra-toolbox/label/dev cookiecutter_example
+```
+or, if you prefer a stable version of astra-toolbox:
+```
+conda install -c aahendriksen -c astra-toolbox cookiecutter_example
 ```
 
 ### Installing from source
@@ -94,6 +98,9 @@ project. Go to the cloned directory and run PIP installer:
 ```
 git clone https://github.com/ahendriksen/cookiecutter_example.git
 cd cookiecutter_example
+conda install -c astra-toolbox astra-toolbox
+# If you want the development version of astra, use:
+# conda install -c astra-toolbox/label/dev astra-toolbox
 pip install -e .
 ```
 
