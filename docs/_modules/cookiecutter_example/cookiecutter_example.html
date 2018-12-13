@@ -146,6 +146,8 @@
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 
 <span class="sd">&quot;&quot;&quot;Main module.&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">astra</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <div class="viewcode-block" id="hello_world"><a class="viewcode-back" href="../../cookiecutter_example.html#cookiecutter_example.cookiecutter_example.hello_world">[docs]</a><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Say hello to world.</span>
@@ -155,6 +157,32 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="default_projection_geometry"><a class="viewcode-back" href="../../cookiecutter_example.html#cookiecutter_example.cookiecutter_example.default_projection_geometry">[docs]</a><span class="k">def</span> <span class="nf">default_projection_geometry</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Make a default projection geometry</span>
+
+<span class="sd">    The returned projection geometry is a 3D cone beam geometry with</span>
+<span class="sd">    100 angles, 100x100 pixels with a pixel spacing of 1.0mm.</span>
+
+<span class="sd">    :returns: a projection geometry</span>
+<span class="sd">    :rtype: dict</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">spacing</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">shape</span> <span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">source_distance</span> <span class="o">=</span><span class="mi">1</span>
+    <span class="n">detector_distance</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">astra</span><span class="o">.</span><span class="n">create_proj_geom</span><span class="p">(</span>
+        <span class="s2">&quot;cone&quot;</span><span class="p">,</span>
+        <span class="o">*</span><span class="n">spacing</span><span class="p">,</span>
+        <span class="o">*</span><span class="n">shape</span><span class="p">,</span>
+        <span class="n">angles</span><span class="p">,</span>
+        <span class="n">source_distance</span><span class="p">,</span>
+        <span class="n">detector_distance</span><span class="p">,</span>
+    <span class="p">)</span></div>
 </pre></div>
 
            </div>
