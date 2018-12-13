@@ -48,6 +48,31 @@ package for optimal usability. The following has already been completed:
 	- These conda packages have been uploaded to [Anaconda](https://anaconda.org).
 	- The installation instructions (below) have been updated.
 
+## Index of common actions
+### Documentation
+- Add initial documentation
+- Update documentation
+- Add documentation to your module
+### README
+- Update installation instructions
+### Modules
+- Make submodules easier to reach
+### Testing
+- Add a test to your program
+### Examples
+- Make a simple example
+### Style
+- Automatically improve code layout
+### (Conda) Packaging and requirements
+- Create a Conda package
+- Add Astra dependency
+- Add PyTorch dependency
+- Add a 'normal' dependency
+### Releasing and Changelog
+- Create an initial release
+- Update unreleased section in CHANGELOG.md
+- Create new release
+
 ## Getting Started
 
 It takes a few steps to setup cookiecutter example on your
