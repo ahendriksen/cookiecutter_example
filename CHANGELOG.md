@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- default_projection_geometry function: creates an astra geometry.
 ### Fixed
 
 ## 0.1.0 - 2018-12-13
